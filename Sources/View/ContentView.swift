@@ -7,16 +7,20 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 public struct FindMyIPContentView: View {
-
-    public init(){}
+    public init() {}
     
     @ObservedObject var viewModel = IPViewModel()
     
     public var body: some View {
         VStack {
             if viewModel.isLoading {
-                ProgressView()
+                if #available(iOS 14.0, *) {
+                    ProgressView()
+                } else {
+                    // Fallback on earlier versions
+                }
             } else {
                 Text("Your IP Address: \(viewModel.ipAddress)")
                     .padding()
@@ -33,6 +37,8 @@ public struct FindMyIPContentView: View {
     }
 }
 
+
+@available(iOS 13.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         FindMyIPContentView()

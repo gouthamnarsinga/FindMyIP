@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 import Combine
 
+@available(iOS 13.0, *)
 class IPViewModel: ObservableObject {
     @Published var ipAddress: String = ""
     @Published var isLoading: Bool = false

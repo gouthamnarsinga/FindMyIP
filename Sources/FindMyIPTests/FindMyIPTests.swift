@@ -8,6 +8,7 @@
 import XCTest
 @testable import FindMyIPLibrary
 
+@available(iOS 13.0, *)
 final class FindMyIPTests: XCTestCase {
     
     var viewModel: IPViewModel!
