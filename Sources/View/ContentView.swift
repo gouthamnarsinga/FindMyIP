@@ -8,6 +8,8 @@
 import SwiftUI
 
 public struct FindMyIPContentView: View {
+
+    public init(){}
     
     @ObservedObject var viewModel = IPViewModel()
     
