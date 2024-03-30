@@ -12,7 +12,7 @@ import XCTest
 final class MainAppTests: XCTestCase {
     
     var viewModel: IPViewModel!
-    
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         viewModel = IPViewModel()
