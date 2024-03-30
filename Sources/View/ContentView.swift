@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+public struct FindMyIPContentView: View {
     
     @ObservedObject var viewModel = IPViewModel()
     
-    var body: some View {
+    public var body: some View {
         VStack {
             if viewModel.isLoading {
                 ProgressView()
@@ -33,6 +33,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FindMyIPContentView()
     }
 }
