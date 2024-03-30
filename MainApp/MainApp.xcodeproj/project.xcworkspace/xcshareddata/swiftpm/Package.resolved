@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "723fa5a6c65812aec4a0d7cc432ee198883b6e00",
+        "version" : "5.9.0"
+      }
+    },
+    {
+      "identity" : "findmyip",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gouthamnarsinga/FindMyIP.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e4cdc08b98530499ef85ec64826e81e7e31c0f63"
+      }
+    }
+  ],
+  "version" : 2
+}
